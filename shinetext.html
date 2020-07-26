@@ -1,0 +1,43 @@
+<html>
+    <head>
+<style>
+    body{
+    margin:0;
+    padding:0;
+    background: black;
+    font-family:sans-serif;
+    font-family:sans-serif;
+    text-transform:uppercase;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.4em;
+    word-spacing: 15px;
+    }
+    p {
+        position:relative;
+        opacity:1;
+        transition:1s;
+        background:linear-gradient(90deg, #000, #fff,#000);
+        letter-spacing:4px;
+        background-size:70%;
+        background-repeat:no-repeat;
+        animation:animate 3s linear infinite;
+        -webkit-background-clip : text;
+        -webkit-text-fill-color:transparent;
+    }
+    @keyframes animate{
+        0%{
+            background-position:-500%;
+        }
+        100%{
+            background-position:500%;
+        }
+    }
+</style>
+    </head>
+<body><p>
+SHINING text animation effects
+</p>
+</body>
+    </html>

@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+        body{
+        margin:0;
+        padding:0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        }
+        label{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        input[type="checkbox"]{
+            -webkit-appearance: none;
+            width:80px;
+            height:30px;
+            border-radius:40px;
+            outline:none;
+            position: relative;
+            background:linear-gradient(0deg,#333,#000);
+            box-shadow:  0 0 0 4px #353535, inset 0 0 10px #000,inset 0 0 15px rgba(0,0,0,.2), 0 5px 20px rgba(0,0,0,.5);
+        }
+        input[type="checkbox"]::before{
+            content:'';
+            display:block;
+            width:70%;
+            height:100%;
+            background:linear-gradient(0deg, #000,#6b6b6b);
+            border-radius:40px;
+            transition:0.5s;
+       
+        }
+        input[type="checkbox"]::after{
+            content:'';
+            display:block;
+            position: absolute;
+            top:40%;
+            left:60%;
+            border-radius:50%;
+            background:linear-gradient(180deg, #000,#6b6b6b);
+            width:4px; height:4px;
+            transition:0.5s;
+       
+        }
+        input:checked[type="checkbox"]{
+            background:#63cdff;
+            transition:0.9s;
+            box-shadow:  0 0 5px #6dd1ff,0 0 0 4px #353535, inset 0 0 10px #000,inset 0 0 15px rgba(0,0,0,.2), 0 5px 20px rgba(0,0,0,.5);
+        
+        }
+        input[type="checkbox"]{
+        transition: 0.5s;
+        }
+
+        input:checked[type="checkbox"]::before{
+            transform: translate(24px);
+            transition:0.5s;
+              
+        }
+        input:checked[type="checkbox"]::after{
+            transform: translate(24px);
+            background:#63cdff;
+            transition:0.5s;
+            box-shadow:0 0 5px #63cdff,0 0 15px #63cdff,0 0 8px #63cdff,0 0 10px #63cdff;
+        
+        }
+        
+        </style>
+    </head>
+    <body>
+        <label>
+        <input type="checkbox" name="">
+            </label>
+    </body>
+</html>

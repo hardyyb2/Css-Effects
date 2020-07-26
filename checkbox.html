@@ -1,0 +1,71 @@
+<html>
+    <heaD>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+    }
+    input[type="checkbox"]{
+        -webkit-appearance: none;
+        width:200px;
+        height:80px;
+        border-radius:40px;
+        outline:none;
+            position:relative;
+             box-shadow:  0 0 0 4px #353535, inset 0 0 10px #000,inset 0 0 15px rgba(0,0,0,.2), 0 5px 20px rgba(0,0,0,.5);
+             background:linear-gradient(0deg,#333,#000);     
+    }
+    input[type="checkbox"]::before{
+        position:absolute;
+        height:100%;
+        width:70%;
+        content:'';
+        background:linear-gradient(0deg, #000,#6b6b6b);
+        z-indeX:1;
+        border-radius:40px;
+        transition:0.6s;
+     
+    }
+    input:checked[type="checkbox"]{
+        background:#63cdff;
+            transition:0.6s;
+            box-shadow:  0 0 0 4px #353535, inset 0 0 10px #000,inset 0 0 15px rgba(0,0,0,.2), 0 5px 20px rgba(0,0,0,.5),0 0 5px #63cdff,0 0 15px #63cdff,0 0 8px #63cdff,0 0 10px #63cdff;
+            ;
+     
+    }
+    input[type="checkbox"]::after{
+        position:absolute;
+        height:10px;
+        width:10px;
+        top:48%;
+        left:56%;
+        content:'';
+        z-index:2;
+        background:linear-gradient(180deg, #000,#6b6b6b);
+          border-radius:40px;
+          transition:0.6s;
+     
+    }
+    input:checked[type="checkbox"]::before{
+        transform:translate(59px);
+        transition:0.6s;
+     
+        } 
+        input:checked[type="checkbox"]::after{
+        transform:translate(59px);
+        background:#63cdff;
+            transition:0.6s;
+            box-shadow:0 0 5px #63cdff,0 0 15px #63cdff,0 0 8px #63cdff,0 0 10px #63cdff;
+       } 
+
+</style>
+
+    </heaD>
+    <body>
+        <input type="checkbox" name="">
+    </body>
+    </html>

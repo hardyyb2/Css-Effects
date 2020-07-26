@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            body{
+                padding:0;
+                margin:0;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                background:black;
+            }
+            .loader{
+                position:relative;
+                width:400px;
+                height:400px;
+                background:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+                border-radius:50%;
+                animation:animate 1s linear infinite;
+                
+            }
+            @keyframes animate{
+                0%{
+                    transform:rotate(0deg);
+                }
+                100%{
+                    transform:rotate(360deg);
+                }
+            }
+            .loader::after{
+                content:'';
+                background:black;
+                position:absolute;
+                top:40px;
+                right:40px;
+                bottom:40px;
+                left:40px;
+                border-radius:50%;
+            }
+.loader span{
+    position: absolute;
+    width:400px;
+  height:400px;
+    background:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+  border-radius:50%;
+             
+}
+.loader span:nth-child(1){
+    filter:blur(15px);
+}
+
+.loader span:nth-child(2){
+    filter:blur(25px);
+}
+.loader span:nth-child(3){
+    filter:blur(45px);
+}
+.loader span:nth-child(4){
+    filter:blur(60px);
+}
+        </style>
+    </head>
+    <body>
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+        body{
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:black;
+            -webkit-text-fill-color: white;
+
+        }
+        ul{
+            text-transform: uppercase;
+            list-style:none;
+            font-size:5em;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            display:flex;
+            flex-direction:row-reverse;
+            letter-spacing:25px;
+        }
+        ul li{
+            transition:4s;
+            opacity:1;
+            filter:blur(1px);
+        }
+        ul li:hover,
+        ul li:hover ~ li 
+        {
+            transition:4s;
+            opacity:0;
+            filter:blur(10px);
+            transform:rotate(180deg) translateY(-200px) ;
+        }
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>k</li>
+            <li>i</li>
+            <li>d</li>
+            <li>r</li>
+            <li>a</li>
+            <li>h</li>
+            
+            
+        </ul>
+    </body>
+</html>
